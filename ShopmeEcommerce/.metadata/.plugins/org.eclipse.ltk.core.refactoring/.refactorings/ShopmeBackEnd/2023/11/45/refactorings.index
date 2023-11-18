@@ -1,0 +1,47 @@
+1699146468972	Copy file
+1699150187472	Move compilation units
+1699150958139	Copy file
+1699237343106	Move compilation unit
+1699237403185	Move compilation units
+1699237837537	Move files
+1699238219488	Copy file
+1699316643841	Move file
+1699316685575	Copy file
+1699316698244	Rename resource 'error.html'
+1699316810909	Copy file
+1699317051296	Copy file
+1699326175685	Delete element
+1699326183255	Delete element
+1699369178919	Delete element
+1699406138932	Copy file
+1699406156590	Rename resource 'users.html'
+1699409577503	Move file
+1699409856910	Move compilation unit
+1699410047008	Copy file
+1699410090840	Rename resource 'user_form.html'
+1699452139086	Copy compilation unit
+1699452176446	Rename compilation unit 'UserNotFoundException.java'
+1699453232364	Move compilation unit
+1699489665914	Copy file
+1699602928864	Copy compilation unit
+1699602933488	Delete element
+1699603302765	Copy compilation unit
+1699603318831	Rename type 'UserCsvExporter'
+1699611092738	Move compilation unit
+1699611118905	Move compilation unit
+1699611176695	Move compilation unit
+1699632582086	Copy compilation unit
+1699632596133	Rename type 'UserExcelExporter'
+1699633743841	Copy compilation unit
+1699633760448	Rename type 'UserPdfExporter'
+1699664765752	Rename type 'BrandRepositoryTests'
+1699666849680	Copy file
+1699666862631	Rename resource 'categories.html'
+1699668601957	Copy file
+1699668614626	Rename resource 'category_form.html'
+1699689472378	Copy compilation unit
+1699689489562	Rename type 'CategoryNotFoundException'
+1699692522629	Copy compilation unit
+1699692540599	Rename type 'CategoryServiceTests'
+1699693060380	Copy compilation unit
+1699693073190	Rename type 'CategoryRestController'

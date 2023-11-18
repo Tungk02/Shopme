@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.shopme.common.entity.Product.cost&apos; in &apos;com.shopme.common.entity.Product&apos;&#x0D;&#x0A;- Original project: &apos;ShopmeCommon&apos;&#x0D;&#x0A;- Original element: &apos;com.shopme.common.entity.Product.cost&apos;&#x0D;&#x0A;- Getter method name: &apos;getCost&apos;&#x0D;&#x0A;- Setter method name: &apos;setCost&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;cost&apos;" flags="589830" getter="getCost" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.shopme.common.entity{Product.java[Product^cost" insertion="33" setter="setCost" stamp="1699868245100" version="1.0" visibility="1"/>
+</session>
