@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<body>
+	<div th:fragment="content" th:remove="tag">
+		<div>
+			<p>
+				Use this page to manage countries which will be displayed in the customer
+				registration form. Click Load Country List frist.
+			</p>
+		</div>
+		<div>
+			<input type="button" value="Load Country List" class="btn btn-primary">
+		</div>
+	</div>
+</body>
+
+</html>

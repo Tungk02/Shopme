@@ -1,0 +1,28 @@
+package com.shopme.admin.setting;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+
+import com.shopme.common.entity.Setting;
+import com.shopme.common.entity.SettingCategory;
+
+@DataJpaTest
+@AutoConfigureTestDatabase(replace = Replace.NONE)
+public class SettingRepositoryTests {
+
+	@Autowired
+	SettingRepository repo;
+	
+	@Test
+	public void testCreateGeneralSettings() {
+		Setting siteName = new Setting("SITE_NAME", "Shopme",SettingCategory.GENERAL);
+		Setting savedSetting = repo.save(siteName);
+		
+		assertThat(savedSetting).isNotNull();
+	}
+}

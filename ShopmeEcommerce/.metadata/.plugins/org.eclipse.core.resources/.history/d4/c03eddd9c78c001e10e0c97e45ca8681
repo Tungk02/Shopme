@@ -1,0 +1,10 @@
+function changeFormStateToNewCountry() {
+    buttonAddCountry.val("Add");
+    labelCountryName.text("Country Name: ");
+
+    buttonUpdateCountry.prop("disabled", true);
+    buttonDeleteCountry.prop("disabled", true);
+
+    fieldCountryCode.val("");
+    fieldCountryName.val("").focus();
+}

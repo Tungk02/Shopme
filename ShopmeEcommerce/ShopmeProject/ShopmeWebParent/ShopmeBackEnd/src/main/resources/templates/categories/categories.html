@@ -23,7 +23,7 @@
 			<table class="table table-bordered table-striped table-hover table-responsive-ms">
 				<thead class="thead-dark">
 					<tr>
-						<th class="hidetable-column">ID</th>
+						<th>ID</th>
 						<th>Category Image</th>
 						<th>
 							<th th:replace="fragments :: column_link('/categories', 'name', 'Category Name', 'tag')" />
@@ -35,7 +35,7 @@
 				</thead>
 				<tbody>
 					<tr th:each="cat : ${listCategories}">
-						<td class="hidetable-column">[[${cat.id}]]</td>
+						<td>[[${cat.id}]]</td>
 						<td>
 							<img th:src="@{${cat.imagePath}}" style="width: 100px;" class="img-fluid" />
 						</td>

@@ -38,9 +38,18 @@ public class WebSecurityConfig {
 	public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests((requests) -> requests
-                		.requestMatchers("/users/**", "/settings/**").hasAuthority("Admin")
+                		.requestMatchers("/users/**", "/settings/**", "/countries/**", "/states/**").hasAuthority("Admin")
                 		.requestMatchers("/categories/**", "/brands/**", "/articles/**", "/menus/**").hasAnyAuthority("Admin","Editor")
-                		.requestMatchers("/products/**").hasAnyAuthority("Admin", "Salesperson", "Editor", "Shipper")
+                		
+                		.requestMatchers("/products/new", "/products/delete/**").hasAnyAuthority("Admin", "Editor")
+                		
+                		.requestMatchers("/products/edit/**", "/products/save", "/products/check_unique").hasAnyAuthority("Admin", "Editor", "Salesperson")
+                		
+                		.requestMatchers("/products", "/products/", "/products/detail/**", "/products/page/**")
+                			.hasAnyAuthority("Admin", "Editor", "Salesperson", "Shipper")
+                			
+                		.requestMatchers("/products/**").hasAnyAuthority("Admin", "Editor")
+                		
                 		.requestMatchers("/customers/**", "/shipping/**", "report/**").hasAnyAuthority("Admin", "Salesperson")
                 		.requestMatchers("/orders/**").hasAnyAuthority("Admin", "/Salesperson", "Shipper")
                                 .requestMatchers("/images/**", "/js/**", "/webjars/**").permitAll()
